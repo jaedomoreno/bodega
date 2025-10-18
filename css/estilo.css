@@ -1,0 +1,126 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #fff; /* sin fondo degradado */
+    color: #333;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+/* CONTENIDO PRINCIPAL */
+.contenido {
+    max-width: 900px;
+    margin: 80px auto 20px auto; /* margen top para PC con menú arriba */
+    padding: 20px;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+/* FORMULARIOS */
+form label {
+    display: block;
+    margin-top: 15px;
+    font-weight: 600;
+}
+
+form input[type=text],
+form input[type=file],
+form input[type=password],
+form input[type=number] {
+    width: 100%;
+    padding: 14px 20px;
+    margin-top: 5px;
+    border-radius: 12px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+form input:focus {
+    border-color: #4a90e2;
+    outline: none;
+}
+
+button {
+    margin-top: 20px;
+    padding: 14px 20px;
+    background-color: #3b82f6;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+button:hover {
+    background-color: #2563eb;
+}
+
+/* TABLAS */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+table th,
+table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+table th {
+    background-color: #1f2937;
+    color: white;
+}
+
+/* FIRMA DIGITAL */
+#signature-pad {
+    border: 2px solid #1f2937;
+    border-radius: 12px;
+    width: 100%;
+    height: 160px;
+}
+
+#clear-signature {
+    background-color: #ef4444;
+    margin-top: 10px;
+    color: white;
+}
+
+#clear-signature:hover {
+    background-color: #b91c1c;
+}
+
+/* MÓVIL */
+@media (max-width: 768px) {
+    .contenido {
+        margin: 0;
+        padding: 10px;
+        border-radius: 0;
+        width: 100%;
+        min-height: 100vh;
+        box-shadow: none;
+    }
+
+    table th,
+    table td {
+        padding: 8px;
+    }
+
+    button,
+    form input[type=text],
+    form input[type=number] {
+        padding: 12px;
+        font-size: 14px;
+    }
+}
